@@ -1,6 +1,4 @@
 tensorflow
-numpy
-pandas
 spacy
 requests
 streamlit
