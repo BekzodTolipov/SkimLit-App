@@ -3,3 +3,4 @@ numpy
 pandas
 spacy
 requests
+zipfile
