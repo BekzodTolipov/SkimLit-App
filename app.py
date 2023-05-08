@@ -18,7 +18,6 @@ def unzip_data():
     zip_ref.close()
 
 
-@st.cache(allow_output_mutation=True)
 def download_model():
     # Specify the URL to download the file
     url = f"https://storage.googleapis.com/datascience-projects-portfolio/skimlit_tribrid_model.zip"
@@ -33,6 +32,7 @@ def split_chars(text):
     return " ".join(list(text))
 
 
+@st.cache(allow_output_mutation=True)
 def load_model_from_storage():
     download_model()
     unzip_data()
