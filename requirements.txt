@@ -2,3 +2,4 @@ tensorflow
 spacy
 requests
 streamlit
+pip
