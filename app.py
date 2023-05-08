@@ -32,7 +32,7 @@ def split_chars(text):
     return " ".join(list(text))
 
 
-@st.cache_data
+@st.cache_resource
 def load_model_from_storage():
     download_model()
     unzip_data()
