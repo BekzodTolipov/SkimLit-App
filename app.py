@@ -8,7 +8,7 @@ from tensorflow.keras import layers
 from tensorflow.keras.optimizers import Adam
 
 # Set the local file path to save the downloaded file
-save_path = "./data/skimlit_tribrid_model.zip"
+save_path = "./skimlit_tribrid_model.zip"
 class_names = ["BACKGROUND", "CONCLUSIONS", "METHODS", "OBJECTIVE", "RESULTS"]
 
 
@@ -32,7 +32,6 @@ def split_chars(text):
     return " ".join(list(text))
 
 
-@st.cache(allow_output_mutation=True)
 def load_model_from_storage():
     download_model()
     unzip_data()
